@@ -16,6 +16,7 @@
 		AB52453D2755D9A0001322BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB52453B2755D9A0001322BB /* LaunchScreen.storyboard */; };
 		AB52454C2755E19D001322BB /* NoCommitConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB52454A2755E19D001322BB /* NoCommitConstants.swift */; };
 		AB52454D2755E19D001322BB /* NoCommitConstants-TEMPLATE.txt in Resources */ = {isa = PBXBuildFile; fileRef = AB52454B2755E19D001322BB /* NoCommitConstants-TEMPLATE.txt */; };
+		AB524555275642BA001322BB /* MapButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB524554275642BA001322BB /* MapButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		AB52453E2755D9A0001322BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB52454A2755E19D001322BB /* NoCommitConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoCommitConstants.swift; path = ../NoCommitConstants.swift; sourceTree = "<group>"; };
 		AB52454B2755E19D001322BB /* NoCommitConstants-TEMPLATE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "NoCommitConstants-TEMPLATE.txt"; path = "../NoCommitConstants-TEMPLATE.txt"; sourceTree = "<group>"; };
+		AB524554275642BA001322BB /* MapButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				AB5245302755D99D001322BB /* AppDelegate.swift */,
 				AB5245322755D99D001322BB /* SceneDelegate.swift */,
 				AB5245342755D99D001322BB /* ViewController.swift */,
+				AB524554275642BA001322BB /* MapButton.swift */,
 				AB5245362755D99D001322BB /* Main.storyboard */,
 				AB5245392755D9A0001322BB /* Assets.xcassets */,
 				AB52453B2755D9A0001322BB /* LaunchScreen.storyboard */,
@@ -246,6 +249,7 @@
 				AB52454C2755E19D001322BB /* NoCommitConstants.swift in Sources */,
 				AB5245312755D99D001322BB /* AppDelegate.swift in Sources */,
 				AB5245332755D99D001322BB /* SceneDelegate.swift in Sources */,
+				AB524555275642BA001322BB /* MapButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
