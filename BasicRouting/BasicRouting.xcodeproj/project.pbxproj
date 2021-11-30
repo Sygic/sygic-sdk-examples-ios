@@ -3,19 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C0E99799E4EB2FBCF666005 /* Pods_BasicRouting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E637678B3F474A8313DE172 /* Pods_BasicRouting.framework */; };
 		AB5245312755D99D001322BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5245302755D99D001322BB /* AppDelegate.swift */; };
 		AB5245332755D99D001322BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5245322755D99D001322BB /* SceneDelegate.swift */; };
 		AB5245352755D99D001322BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5245342755D99D001322BB /* ViewController.swift */; };
 		AB5245382755D99D001322BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB5245362755D99D001322BB /* Main.storyboard */; };
 		AB52453A2755D9A0001322BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB5245392755D9A0001322BB /* Assets.xcassets */; };
 		AB52453D2755D9A0001322BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB52453B2755D9A0001322BB /* LaunchScreen.storyboard */; };
+		AB52454C2755E19D001322BB /* NoCommitConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB52454A2755E19D001322BB /* NoCommitConstants.swift */; };
+		AB52454D2755E19D001322BB /* NoCommitConstants-TEMPLATE.txt in Resources */ = {isa = PBXBuildFile; fileRef = AB52454B2755E19D001322BB /* NoCommitConstants-TEMPLATE.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E637678B3F474A8313DE172 /* Pods_BasicRouting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicRouting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65424A79A18B67DFF150A2F7 /* Pods-BasicRouting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicRouting.debug.xcconfig"; path = "Target Support Files/Pods-BasicRouting/Pods-BasicRouting.debug.xcconfig"; sourceTree = "<group>"; };
+		99F1ABA42DA10022F1626D39 /* Pods-BasicRouting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicRouting.release.xcconfig"; path = "Target Support Files/Pods-BasicRouting/Pods-BasicRouting.release.xcconfig"; sourceTree = "<group>"; };
 		AB52452D2755D99D001322BB /* BasicRouting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicRouting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB5245302755D99D001322BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB5245322755D99D001322BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		AB5245392755D9A0001322BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB52453C2755D9A0001322BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB52453E2755D9A0001322BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB52454A2755E19D001322BB /* NoCommitConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoCommitConstants.swift; path = ../NoCommitConstants.swift; sourceTree = "<group>"; };
+		AB52454B2755E19D001322BB /* NoCommitConstants-TEMPLATE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "NoCommitConstants-TEMPLATE.txt"; path = "../NoCommitConstants-TEMPLATE.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C0E99799E4EB2FBCF666005 /* Pods_BasicRouting.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5AEB42677C32BE7153FE90DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				65424A79A18B67DFF150A2F7 /* Pods-BasicRouting.debug.xcconfig */,
+				99F1ABA42DA10022F1626D39 /* Pods-BasicRouting.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5F8EDA8A31FB817631CD1FC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E637678B3F474A8313DE172 /* Pods_BasicRouting.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AB5245242755D99D001322BB = {
 			isa = PBXGroup;
 			children = (
+				AB5245442755DB65001322BB /* SharedConstants */,
 				AB52452F2755D99D001322BB /* BasicRouting */,
 				AB52452E2755D99D001322BB /* Products */,
+				5AEB42677C32BE7153FE90DF /* Pods */,
+				5F8EDA8A31FB817631CD1FC1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +96,15 @@
 			path = BasicRouting;
 			sourceTree = "<group>";
 		};
+		AB5245442755DB65001322BB /* SharedConstants */ = {
+			isa = PBXGroup;
+			children = (
+				AB52454B2755E19D001322BB /* NoCommitConstants-TEMPLATE.txt */,
+				AB52454A2755E19D001322BB /* NoCommitConstants.swift */,
+			);
+			name = SharedConstants;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +112,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB5245412755D9A0001322BB /* Build configuration list for PBXNativeTarget "BasicRouting" */;
 			buildPhases = (
+				E4F71DA5AB09320376B3C860 /* [CP] Check Pods Manifest.lock */,
+				AB5245492755DB86001322BB /* [Custom] NoCommitConstantsPrepare.sh */,
 				AB5245292755D99D001322BB /* Sources */,
 				AB52452A2755D99D001322BB /* Frameworks */,
 				AB52452B2755D99D001322BB /* Resources */,
+				A208C03D2EA6C3B4142BA377 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,7 +144,7 @@
 				};
 			};
 			buildConfigurationList = AB5245282755D99D001322BB /* Build configuration list for PBXProject "BasicRouting" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -125,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB52454D2755E19D001322BB /* NoCommitConstants-TEMPLATE.txt in Resources */,
 				AB52453D2755D9A0001322BB /* LaunchScreen.storyboard in Resources */,
 				AB52453A2755D9A0001322BB /* Assets.xcassets in Resources */,
 				AB5245382755D99D001322BB /* Main.storyboard in Resources */,
@@ -133,12 +175,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A208C03D2EA6C3B4142BA377 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BasicRouting/Pods-BasicRouting-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BasicRouting/Pods-BasicRouting-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BasicRouting/Pods-BasicRouting-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB5245492755DB86001322BB /* [Custom] NoCommitConstantsPrepare.sh */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[Custom] NoCommitConstantsPrepare.sh";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				../NoCommitConstants.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "../NoCommitConstantsPrepare.sh\n";
+			showEnvVarsInLog = 0;
+		};
+		E4F71DA5AB09320376B3C860 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BasicRouting-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AB5245292755D99D001322BB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AB5245352755D99D001322BB /* ViewController.swift in Sources */,
+				AB52454C2755E19D001322BB /* NoCommitConstants.swift in Sources */,
 				AB5245312755D99D001322BB /* AppDelegate.swift in Sources */,
 				AB5245332755D99D001322BB /* SceneDelegate.swift in Sources */,
 			);
@@ -217,7 +322,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +377,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -284,12 +389,14 @@
 		};
 		AB5245422755D9A0001322BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65424A79A18B67DFF150A2F7 /* Pods-BasicRouting.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LHXY425M9Z;
+				ENABLE_BITCODE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BasicRouting/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -312,12 +419,14 @@
 		};
 		AB5245432755D9A0001322BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99F1ABA42DA10022F1626D39 /* Pods-BasicRouting.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LHXY425M9Z;
+				ENABLE_BITCODE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BasicRouting/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

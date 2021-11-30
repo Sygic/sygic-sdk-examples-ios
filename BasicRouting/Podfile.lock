@@ -1,0 +1,20 @@
+PODS:
+  - SygicAuth (1.0.0)
+  - SygicMaps (20.0.0):
+    - SygicAuth (= 1.0.0)
+
+DEPENDENCIES:
+  - SygicMaps (~> 20.0)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SygicAuth
+    - SygicMaps
+
+SPEC CHECKSUMS:
+  SygicAuth: 1cec74bcc950c3e7464e5e08258c0254af74ba70
+  SygicMaps: c80370e627659d53fc654a1a02619c6c8c710ff8
+
+PODFILE CHECKSUM: ebf5c0c9c441ad1b535797bff5e149c39e76b33f
+
+COCOAPODS: 1.11.0
