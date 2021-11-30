@@ -12,7 +12,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let initRequest = SYContextInitRequest(configuration: [
             "Authentication": [
-                "app_key": "your-app-key"
+                "app_key": NoCommitConstants.appKey // in case of error, see NoCommitConstants-TEMPLATE.txt
             ],
             "MapReaderSettings": [
                 "startup_online_maps_enabled": true

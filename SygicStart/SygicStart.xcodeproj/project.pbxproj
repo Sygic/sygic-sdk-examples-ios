@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB5245502755E234001322BB /* NoCommitConstants-TEMPLATE.txt in Resources */ = {isa = PBXBuildFile; fileRef = AB52454E2755E234001322BB /* NoCommitConstants-TEMPLATE.txt */; };
+		AB5245512755E234001322BB /* NoCommitConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB52454F2755E234001322BB /* NoCommitConstants.swift */; };
 		AB6B1E5B275536AD006D106F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6B1E5A275536AD006D106F /* AppDelegate.swift */; };
 		AB6B1E5D275536AD006D106F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6B1E5C275536AD006D106F /* SceneDelegate.swift */; };
 		AB6B1E5F275536AD006D106F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6B1E5E275536AD006D106F /* ViewController.swift */; };
@@ -19,6 +21,8 @@
 /* Begin PBXFileReference section */
 		111695A49A3ED0075FC9E852 /* Pods-SygicStart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SygicStart.release.xcconfig"; path = "Target Support Files/Pods-SygicStart/Pods-SygicStart.release.xcconfig"; sourceTree = "<group>"; };
 		2D42F8DC767E2CD095DC1913 /* Pods_SygicStart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SygicStart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB52454E2755E234001322BB /* NoCommitConstants-TEMPLATE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "NoCommitConstants-TEMPLATE.txt"; path = "../NoCommitConstants-TEMPLATE.txt"; sourceTree = "<group>"; };
+		AB52454F2755E234001322BB /* NoCommitConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoCommitConstants.swift; path = ../NoCommitConstants.swift; sourceTree = "<group>"; };
 		AB6B1E57275536AD006D106F /* SygicStart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SygicStart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB6B1E5A275536AD006D106F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB6B1E5C275536AD006D106F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +49,7 @@
 		AB6B1E4E275536AD006D106F = {
 			isa = PBXGroup;
 			children = (
+				AB6B1E872755704B006D106F /* SharedConstants */,
 				AB6B1E59275536AD006D106F /* SygicStart */,
 				AB6B1E58275536AD006D106F /* Products */,
 				ABA35B317BC50AEF3AE71450 /* Pods */,
@@ -74,6 +79,15 @@
 			path = SygicStart;
 			sourceTree = "<group>";
 		};
+		AB6B1E872755704B006D106F /* SharedConstants */ = {
+			isa = PBXGroup;
+			children = (
+				AB52454E2755E234001322BB /* NoCommitConstants-TEMPLATE.txt */,
+				AB52454F2755E234001322BB /* NoCommitConstants.swift */,
+			);
+			name = SharedConstants;
+			sourceTree = "<group>";
+		};
 		ABA35B317BC50AEF3AE71450 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +113,7 @@
 			buildConfigurationList = AB6B1E6B275536B0006D106F /* Build configuration list for PBXNativeTarget "SygicStart" */;
 			buildPhases = (
 				B90CECC09D9C2EBCCB7AD33D /* [CP] Check Pods Manifest.lock */,
+				AB6B1E8627556960006D106F /* [Custom] NoCommitConstantsPrepare.sh */,
 				AB6B1E53275536AD006D106F /* Sources */,
 				AB6B1E54275536AD006D106F /* Frameworks */,
 				AB6B1E55275536AD006D106F /* Resources */,
@@ -151,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB5245502755E234001322BB /* NoCommitConstants-TEMPLATE.txt in Resources */,
 				AB6B1E67275536B0006D106F /* LaunchScreen.storyboard in Resources */,
 				AB6B1E64275536B0006D106F /* Assets.xcassets in Resources */,
 				AB6B1E62275536AD006D106F /* Main.storyboard in Resources */,
@@ -160,6 +176,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		AB6B1E8627556960006D106F /* [Custom] NoCommitConstantsPrepare.sh */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[Custom] NoCommitConstantsPrepare.sh";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				../NoCommitConstants.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "../NoCommitConstantsPrepare.sh\n";
+			showEnvVarsInLog = 0;
+		};
 		B90CECC09D9C2EBCCB7AD33D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -207,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB6B1E5F275536AD006D106F /* ViewController.swift in Sources */,
+				AB5245512755E234001322BB /* NoCommitConstants.swift in Sources */,
 				AB6B1E5B275536AD006D106F /* AppDelegate.swift in Sources */,
 				AB6B1E5D275536AD006D106F /* SceneDelegate.swift in Sources */,
 			);

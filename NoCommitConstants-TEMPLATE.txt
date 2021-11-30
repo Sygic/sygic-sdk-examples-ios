@@ -1,0 +1,14 @@
+// If it's NoCommitConstants-TEMPLATE.txt:
+//   1. Make a copy of this file, name it NoCommitConstants.swift
+//   2. Uncomment the appKey value
+//   3. Replace "your-app-key" with your API key
+//
+// If it's NoCommitConstants.swift:
+//   - note that this file is added to gitignore
+
+
+import Foundation
+
+struct NoCommitConstants {
+    static let appKey = //"your-app-key"
+}
