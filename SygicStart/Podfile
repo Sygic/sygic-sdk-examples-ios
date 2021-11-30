@@ -1,0 +1,9 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+# SygicMaps supports iOS 11, but our app uses UISceneDelegate therefore requires iOS 13
+platform :ios, '13.0'
+
+target 'SygicStart' do
+  use_frameworks!
+  pod 'SygicMaps', '~>20.0'
+end
