@@ -1,6 +1,10 @@
 import UIKit
 import SygicMaps
 
+extension Notification.Name {
+    static let DidInitSygicMaps = Notification.Name("DidInitSygicMaps")
+}
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -9,12 +13,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let initRequest = SYContextInitRequest(configuration: [
             "Authentication": [
                 "app_key": "your-app-key"
+            ],
+            "MapReaderSettings": [
+                "startup_online_maps_enabled": true
             ]
         ])
         SYContext.initWithRequest(initRequest) { (result, description) in
             if result == .success {
                 // since now, the app can use SygicMaps functionality
                 print("SygicMaps init success")
+                NotificationCenter.default.post(name: .DidInitSygicMaps, object: nil)
             } else {
                 // handle SygicMaps initialization fail
                 print("Error: SygicMaps init failed (\(result.rawValue)): \(description)")
