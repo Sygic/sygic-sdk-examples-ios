@@ -3,10 +3,10 @@ import SygicMaps
 
 struct Constants {
     static let initialZoom = CGFloat(15)
-    static let initialLookAt = SYGeoCoordinate(latitude: 48.145810, longitude: 17.126420)
+    static let initialLookAt = SYGeoCoordinate(latitude: 51.500432, longitude: -0.126051)
     static let routeStart = initialLookAt
-    static let routeEnd = SYGeoCoordinate(latitude: 48.382398, longitude: 17.585621)
-    static let routeWaypoint = SYGeoCoordinate(latitude: 48.220875, longitude: 17.423558)
+    static let routeEnd = SYGeoCoordinate(latitude: 51.505431, longitude: -0.103124)
+    static let routeWaypoint = SYGeoCoordinate(latitude: 51.504387, longitude: -0.115477)
 }
 
 class ViewController: UIViewController {
