@@ -18,7 +18,7 @@ Each folder contains an iOS application project. Projects are independent from e
 1. Open SygicStart.xcworkspace
 1. Set your Apple Development signing identity
 1. Build the project (at the very first time it will fail because API key is not set yet)
-1. Fix the error in NoCommitConstants.swift by specifying your Sygic API key (this file is shared between all projects)
+1. Fix the error in NoCommitConstants.swift by specifying your [Sygic API key](https://www.sygic.com/enterprise/get-api-key) (this file is shared between all projects)
 1. Build and run the application
 
 Similar approach is valid for each folder with demo project. 
